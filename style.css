@@ -1,6 +1,8 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+
+/* packeges section  */
 .icon{
     width: 20px;
     height: 20px;
@@ -45,6 +47,8 @@ body{
 .badge-position{
     transform: translateX(140px) translateY(-30px);
 }
+
+/* footer section  */
 .footer-image{
     height: 40px;
     width: 135px;
