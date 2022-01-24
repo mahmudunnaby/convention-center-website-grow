@@ -124,6 +124,96 @@
         <!-- BONUS -->
 
 
+        <div>
+            <h1 class="text-center fw-bold pb-5 pt-5">Happy Clients says</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 ">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="./images/person 1.png" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="./images/person 2.png" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="./images/person 3.png" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="./images/person 4.png" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        </div>
+        </div>
+
+
+
+
         <!-- Our Package Area -->
         <div class="container ">
 
@@ -396,6 +486,41 @@
 
 
         </section>
+
+        <div class="d-flex justify-content-around mt-5 ">
+
+            <div class="card " style="width: 18rem;">
+                <img src="./images/Discount.gif" class="card-img-top" alt="...">
+                <div class="card-body ">
+                    <p class="card-text text-center"> Your Passion is our Satisfaction.We are commited to deliver an
+                        exceptional
+                        experience every time. We always appriciate your interest.Enjoy flat 30% discount at your
+                        first purchase </p>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <button type="button" class="btn btn-primary" id="liveToastBtn">Give Me
+                            Discound</button>
+
+                        <div class="position-fixed bottom-0 end-0 p-5" style="z-index: 11">
+                            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                                <div class="toast-header">
+                                    <img src="./images/honeypot-honey-pot-sweet-dessert-food-svgrepo-com.svg"
+                                        class="rounded me-2" alt="...">
+                                    <strong class="me-auto">30% Discount</strong>
+                                    <small>11 mins ago</small>
+                                    <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="toast-body">
+                                    Hello, avail 30% discount at your first booking. Use promo code
+                                    <Code>Programming-Hero</Code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
         <!-- More query -->
         <section class="mt-5 pb-5 bottom-bg">
             <h1 class="text-center fw-bold pb-5 pt-5">More Questions?</h1>
@@ -465,6 +590,19 @@
         crossorigin="anonymous"></script>
     <!-- Fontawesome script Intregration -->
     <script src="https://kit.fontawesome.com/442a8da85d.js" crossorigin="anonymous"></script>
+    <!-- Toast Script Taken from Booststrap -->
+    <script>
+        var toastTrigger = document.getElementById('liveToastBtn')
+        var toastLiveExample = document.getElementById('liveToast')
+        if (toastTrigger) {
+            toastTrigger.addEventListener('click', function () {
+                var toast = new bootstrap.Toast(toastLiveExample)
+
+                toast.show()
+            })
+        }
+    </script>
+
 </body>
 
 </html>
